@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "CASCLib.NET"
+    </assembly>
+    <members>
+        <member name="M:CASCLibNET.CASCStorage.Dispose">
+            <summary>
+Releases the unmanaged resources used by the <see cref="T:CASCLibNET.CASCStorage" /> and optionally releases the managed resources.
+</summary>
+        </member>
+        <member name="M:CASCLibNET.CASCStorage.OpenFile(System.String)">
+            <summary>
+Opens a file that is contained in the CASC
+</summary>
+            <param name="fileName">Name of the file in the CASC.</param>
+            <returns>
+The resulting <see cref="T:CASCLibNET.CASCFileStream" /></returns>
+        </member>
+        <member name="M:CASCLibNET.CASCStorage.#ctor(System.String)">
+            <summary>
+Initializes a new instance of the <see cref="T:CASCLibNET.CASCStorage" /> class for the specified path.
+</summary>
+            <param name="path">Path to the storage.</param>
+        </member>
+        <member name="M:CASCLibNET.CASCStorage.#ctor(System.String,System.Int32)">
+            <summary>
+Initializes a new instance of the <see cref="T:CASCLibNET.CASCStorage" /> class for the specified path.
+</summary>
+            <param name="path">Path to the storage.</param>
+            <param name="localeMask">Locale Mask. Only used for World of Warcraft storages.</param>
+        </member>
+        <member name="P:CASCLibNET.CASCStorage.Files">
+            <summary>
+Gets the Files within the Storage
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCStorage.FilePath">
+            <summary>
+Gets the CASC File Path
+</summary>
+        </member>
+        <member name="F:CASCLibNET.CASCStorage._Files">
+            <summary>
+Files within the CASC Storage
+</summary>
+        </member>
+        <member name="F:CASCLibNET.CASCStorage._FilePath">
+            <summary>
+Storage Path
+</summary>
+        </member>
+        <member name="F:CASCLibNET.CASCStorage._StorageHandle">
+            <summary>
+The Native Storage Handle
+</summary>
+        </member>
+        <member name="T:CASCLibNET.CASCStorage">
+            <summary>
+Provides a wrapper around CASCLib
+</summary>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.Dispose">
+            <summary>
+Releases the unmanaged resources used by the <see cref="T:CASCLibNET.CASCFileStream" /> and optionally releases the managed resources.
+</summary>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+Writes a block of bytes to the stream.
+</summary>
+            <param name="buffer">The buffer containing data to write to the stream.</param>
+            <param name="offset">The zero-based byte offset in array from which to begin copying bytes to the stream.</param>
+            <param name="count">The maximum number of bytes to write.</param>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.SetLength(System.Int64)">
+            <summary>
+Sets the length of this stream to the given value.
+</summary>
+            <param name="value">The new length of the stream.</param>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+Sets the current position of this stream to the given value.
+</summary>
+            <param name="offset">The point relative to origin from which to begin seeking.</param>
+            <param name="origin">Specifies the beginning, the end, or the current position as a reference point for offset, using a value of type <see cref="T:System.IO.SeekOrigin" />.</param>
+            <returns>
+The new position in the stream.
+</returns>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+Reads a block of bytes from the strean and writes the data in a given buffer.
+</summary>
+            <param name="buffer">When this method returns, contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
+            <param name="offset">The byte offset in array at which the read bytes will be placed.</param>
+            <param name="count">The maximum number of bytes to read.</param>
+            <returns>
+The total number of bytes read into the buffer. This might be less than the number of bytes requested if that number of bytes are not currently available, or zero if the end of the stream is reached.
+</returns>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.Flush">
+            <summary>
+Clears buffers for this stream and causes any buffered data to be written to the file.
+</summary>
+        </member>
+        <member name="M:CASCLibNET.CASCFileStream.#ctor(System.IntPtr)">
+            <summary>
+Initializes a new instance of the <see cref="T:CASCLibNET.CASCFileStream" /> class for the specified file handle.
+</summary>
+            <param name="handle">CASC File Handle.</param>
+        </member>
+        <member name="P:CASCLibNET.CASCFileStream.Position">
+            <summary>
+Gets or sets the current position of this stream.
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileStream.Length">
+            <summary>
+Gets the length in bytes of the stream.
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileStream.CanWrite">
+            <summary>
+Gets a value that indicates whether the current stream supports writing.
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileStream.CanSeek">
+            <summary>
+Gets a value that indicates whether the current stream supports seeking.
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileStream.CanRead">
+            <summary>
+Gets a value that indicates whether the current stream supports reading.
+</summary>
+        </member>
+        <member name="F:CASCLibNET.CASCFileStream.FileHandle">
+            <summary>
+The Native File Handle
+</summary>
+        </member>
+        <member name="T:CASCLibNET.CASCFileStream">
+            <summary>
+Provides a Stream for CASC Files
+</summary>
+        </member>
+        <member name="M:InteropUtility.ToStdWString(System.String,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Converts a managed string to a standard wide C++ string
+</summary>
+            <param name="stringInput">Input Managed String</param>
+            <param name="stringOutput">Output wide C++ String</param>
+        </member>
+        <member name="M:InteropUtility.ToStdString(System.String,std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Converts a managed string to a standard C++ string
+</summary>
+            <param name="stringInput">Input Managed String</param>
+            <param name="stringOutput">Output C++ String</param>
+        </member>
+        <member name="M:CASCLibNET.CASCFileInfo.#ctor(System.String,System.Int64,System.Boolean,System.Byte[],System.Byte[])">
+            <summary>
+Initializes a new instance of the <see cref="T:CASCLibNET.CASCFileInfo" /> class
+</summary>
+            <param name="fileName">Name of the CASC File.</param>
+            <param name="fileSize">Size of the CASC File.</param>
+            <param name="isLocal">Whether or not this file is local.</param>
+            <param name="cKey">File's Content Key.</param>
+            <param name="eKey">File's Encoded Key.</param>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo.EKey">
+            <summary>
+Gets the Encoded Key
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo.CKey">
+            <summary>
+Gets the Content Key
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo.IsLocal">
+            <summary>
+Gets if the File is Local
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo.FileSize">
+            <summary>
+Gets the File Size
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo.FileName">
+            <summary>
+Gets the File Name
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo._EKey">
+            <summary>
+Encoded Key
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo._CKey">
+            <summary>
+Content Key
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo._IsLocal">
+            <summary>
+If the File is Local
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo._FileSize">
+            <summary>
+File Size
+</summary>
+        </member>
+        <member name="P:CASCLibNET.CASCFileInfo._FileName">
+            <summary>
+File Name
+</summary>
+        </member>
+        <member name="T:CASCLibNET.CASCFileInfo">
+            <summary>
+Provides a class to hold CASC File Info
+</summary>
+        </member>
+    </members>
+</doc>
