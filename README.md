@@ -22,3 +22,4 @@ beacuse whatever casclib the original used was different and not packaged with p
 -   [Scobalula](https://github.com/Scobalula) - [CASCLib.NET](https://github.com/Scobalula/CASCLib.NET)
 -   [benruehl](https://github.com/benruehl) - [Adonis UI](https://github.com/benruehl/adonis-ui)
 -   Activision / Infinity Ward - [Call of Duty: Modern Warfare 3 Recon Pro Perk Icon](<https://callofduty.fandom.com/wiki/Recon_(perk)>)
+-   fixing build
