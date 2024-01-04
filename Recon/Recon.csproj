@@ -22,17 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CascLib.NET">
-      <HintPath>..\CascLib.NET.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\Recon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CASCLib.NET">
+      <HintPath>..\CASCLib.NET.V.1.0.0.0\Library\x64\Debug\CASCLib.NET.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

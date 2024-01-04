@@ -1,5 +1,5 @@
 ﻿using AdonisUI.Controls;
-using CascLib.NET;
+using CASCLibNET;
 using Newtonsoft.Json;
 using Ookii.Dialogs.Wpf;
 using System;
@@ -24,7 +24,7 @@ namespace Recon
     {
         public ObservableCollection<CASCFile> Files { get; } = new ObservableCollection<CASCFile>();
 
-        CascStorage Storage { get; set; }
+        CASCStorage Storage { get; set; }
 
         public MainWindow()
         {
@@ -114,9 +114,9 @@ namespace Recon
 
                 try
                 {
-                    Storage = new CascStorage(result);
+                    Storage = new CASCStorage(result);
 
-                    foreach (CascFileInfo file in Storage.Files)
+                    foreach (var file in Storage.Files)
                     {
                         int idx = file.FileName.LastIndexOf(".");
                         string fileType = "File";
@@ -287,7 +287,7 @@ namespace Recon
 
                         try
                         {
-                            using CascFileStream input = Storage.OpenFile(file.FilePath);
+                            using CASCFileStream input = Storage.OpenFile(file.FilePath);
                             using FileStream output = File.Create(filePath);
 
                             while (true)
