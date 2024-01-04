@@ -6,6 +6,13 @@ Recon is a file browser and exporter for Blizzard's Content Addressable Storage 
     <img src="https://i.imgur.com/b3ryIQ0.png" draggable="false">
 </p>
 
+
+
+## Whats Differnt in my build 
+
+added the Casclib.net dll as a reference then rewrote the references to casclib to fit the slightly different code
+beacuse whatever casclib the original used was different and not packaged with project causing a failed build 
+
 ## Requirements
 
 -   [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
