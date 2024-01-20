@@ -195,12 +195,12 @@ namespace Recon
 
         private void MenuHelpUpdate_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://github.com/EthanC/Recon/releases") { UseShellExecute = true });
+            Process.Start(new ProcessStartInfo("https://github.com/bodnjenie14/Recon---Battlenet-Casc-Viewer") { UseShellExecute = true });
         }
 
         private void MenuHelpAbout_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://github.com/EthanC/Recon") { UseShellExecute = true });
+            Process.Start(new ProcessStartInfo("https://github.com/bodnjenie14/Recon---Battlenet-Casc-Viewer") { UseShellExecute = true });
         }
 
         private void FileSearch_TextChanged(object sender, TextChangedEventArgs e)

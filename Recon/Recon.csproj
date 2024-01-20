@@ -8,8 +8,8 @@
     <Company />
     <Description>File browser and exporter for Blizzard's Content Addressable Storage Container (CASC) format.</Description>
     <Copyright>2021</Copyright>
-    <PackageProjectUrl>https://github.com/EthanC/Recon</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/EthanC/Recon</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bodnjenie14/Recon---Battlenet-Casc-Viewer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bodnjenie14/Recon---Battlenet-Casc-Viewer</RepositoryUrl>
     <PackageIcon>Recon.png</PackageIcon>
     <ApplicationIcon>Recon.ico</ApplicationIcon>
   </PropertyGroup>
